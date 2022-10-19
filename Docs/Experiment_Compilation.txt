@@ -1,0 +1,142 @@
+...Experiment-5:To learn basics of softwares that can be used for SQL Query evaluations.
+	
+Objective:Installation of XYZ relational database management system.
+We have used MySQL application and online SQL interpreter as instructed by Nishant Sir. 
+1.MySQL-MySQL is a freely available open source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL).
+  SQL is the most popular language for adding, accessing and managing content in a database.
+  It is most noted for its quick processing, proven reliability, ease and flexibility of use. MySQL is an essential part of almost every open source PHP application.
+  Good examples for PHP & MySQL-based scripts are WordPress, Joomla, Magento and Drupal.
+
+2.Online SQL interpreter is an online platform for building database in MySQL. It provides built-in database compiler to upload database files, manipulate, insert, delete, etc. and perform 
+  almost all sorts of operations related to database concepts.
+
+...Experiment-7:Study and use of inbuilt SQL functions - aggregate functions, Built-in functions; namely Numeric, date, string functions.
+
+             Objective-To learn basics of built in functions of SQL.
+
+a.Domain types in SQL:
+
+1.char(n) : Fixed length character string, with user-specified length n.
+2.varchar(n) : Variable length character strings, with user-specified maximum length n.
+3.int : Integer (a finite subset of the integers that is machine-dependent). Size : 4 bytes
+4.smallint : Small integer (a machine-dependent subset of the integer domain type). Size : 2 bytes
+5.tinyint : Tiny integer (a machine-dependent subset of the integer domain type). Size : 1 byte
+6.bigint : Big integer (a machine-dependent subset of the integer domain type). Size : 8 bytes
+7.numeric(p,d) : Fixed point number, with user-specified precision of p digits, with d digits to the right of decimal point.  
+(ex., numeric(3,1), allows 44.5 to be stores exactly, but not 444.5 or 0.32)
+8. Float : HW
+9. Date : yyyy-mm-dd
+10. Datetime : YYYY-MM-DD HH:MM:SS 
+11. Time : HH:MM:SS. And so on
+-For example, the following example illustrates the create table query of covert data operations along with insert data operations using predefined data types in SQL:
+ CREATE table Covert_data
+( 
+  	ID int(6),
+  	alias varchar(20),
+  	unofficial_posting varchar(10),
+  	contact_info varchar(25),
+  	operation_name varchar(20),
+	primary key (ID),
+  	foreign key (ID) references Master_table
+);
+INSERT into Covert_data values(001, 'Tangocharlie1', 'Lahore', 1234567890, 'Tiger');
+INSERT into Covert_data values(002, 'Tangocharlie2', 'LOC', 9456341234, 'Lion');
+INSERT into Covert_data values(003, 'Tangocharlie3', 'Tibet', 9825123779, 'Blackbuck');
+INSERT into Covert_data values(004, 'Tangocharlie4', 'Ghazni', 9537412356, 'Bluewhale');
+INSERT into Covert_data values(005, 'Tangocharlie5', 'Kargil', 9106497245, 'Lion');
+INSERT into Covert_data values(006, 'Tangocharlie6', 'Kargil', 9567343748, 'Blackbuck');
+
+
+
+b.Aggregate functions in SQL:
+
+These functions operate on the multiset of values of a column of a relation, and return a value.
+1.avg: average value	
+2.min: minimum value	
+3.max: maximum value
+4.sum: sum of values	
+5.count: number of values
+
+1.For example, here is the pensioner's table:
+-Write SQL query to extract the number of unique pension records in the martyr's table.
+Ans. select  distinct count(id) from martyr_table
+
+2.In second example, here is the medics table:
+-Write SQL query to extract the average salary of medic professionals.
+Ans. select avg(salary) as avg_salary from medic_data
+
+
+...Experiment 9:Study and use of group by, having, order by features of SQL
+Objective: To learn basics build in features of SQL Query.
+
+1.'GROUP BY' feature-What is the Group by Clause?
+The GROUP BY clause is a SQL command that is used to group rows that have the same values.The GROUP BY clause is used in the SELECT statement .
+Optionally it is used in conjunction with aggregate functions to produce summary reports from the database.That's what it does, summarizing data from the database.
+The queries that contain the GROUP BY clause are called grouped queries and only return a single row for every grouped item.
+For eg, in master_table as given alongside, I intend to arrange data in ascending order by id.
+Ans.select * from master_table order by id
+
+2.'HAVING' clause-The HAVING Clause enables you to specify conditions that filter which group results appear in the results.
+The WHERE clause places conditions on the selected columns, whereas the HAVING clause places conditions on groups created by the GROUP BY clause.
+   
+     Syntax:The following code block shows the position of the HAVING Clause in a query.
+     SELECT
+     FROM
+     WHERE
+     GROUP BY
+     HAVING
+     ORDER BY
+For example, I intend to display the names of serving soldiers not serving in Kargil.
+The tables are attached beside:(from ppt.)
+Ans. select name from Serving_soldier_personnel s natural join Covert_data c where ID not in (select ID from Covert_data  group by ID having unofficial_posting='Kargil')
+
+3.'ORDER BY clause'-The SQL ORDER BY clause is used to sort the data in ascending or descending order, based on one or more columns. 
+                    Some databases sort the query results in an ascending order by default. This particular clause is always written at the end of query following the syntax.
+Syntax:
+The basic syntax of the ORDER BY clause is as follows −
+SELECT column-list 
+FROM table_name 
+[WHERE condition] 
+[ORDER BY column1, column2, .. columnN] [ASC | DESC];
+
+Experiment 3:Relational Algebra queries for the ABC. Clearly write the definition as well as relational algebra queries for each.
+ 1.select operation-:
+   select alias as 'Herman H. Miranda'.
+   Ans.σ (alias='Herman H. Miranda')
+ 2.project operation: 
+   Display all id from covert table.
+   Ans.π(id(σ(covert_data))
+ 3.Natural join operation.  
+   select id and posting from master table and medical table.
+   Ans.π id, posting(σ(main_data ⨝ medic_data))
+ 4.Union operation.
+   select id from covert data and and cook table.
+   Ans.π(id(σ (cook_data))) ∪ π(id(σ (covert_data)))
+ 5.Combination of operators.
+   select id from posting_records where inventory='Model 1907 Military'.
+   Ans.π id(σ (storage_data.inventory='Model 1907 Military')(posting_records ⨝ storage_data))
+ 6.Intersect operation:
+   
+   Ans.
+ 7.Subtract operation:
+   select radio_engineer with salary less than 50000 except with those posted in Ahmedabad.
+   Ans.π id(σ(radio_engineer.salary<50000(radio_engineer)))-π id(σ(radio_engineer.salary<50000∧radio_engineer.posting≠'Ahmedabad'(radio_engineer))) 
+Experiment 9:Normalization techniques.....copy just...
+Why our database is unique and important?
+Ans.Army is an integral aspect of a country’s security and our nation which has one of the largest standing army in the world, the government and in particular our defence ministry along with intelligence services have to keep a track record of the various personnel enlisted in the army under various departments such as fighting, medic, hospitality, border-security forces, para-military forces, covert operations, etc.
+Hence, our project is a mini-model based upon maintaining records regarding those operations in the form of army database.
+You don’t often hear about new innovations in military information security. That’s good news, and it’s bad news. On the one hand, much of the technology is best kept secret to keep it out of the hands of U.S. adversaries. On the other hand, however, maintaining a low profile on information security could lead policymakers to underestimate the threat.
+Make no mistake; information security is one of the most important military issues of the 21st century. Heavy reliance on computers by the U.S. and its allies for communications, vehicle control, surveillance, and signal processing makes it imperative for U.S. military forces to keep data secure from nations and groups hostile to our national interests.
+Just to be clear, information security concerns the ability for the U.S. military to keep its computers and data networks safe from outside attempts to steal, eavesdrop, or corrupt vital defense and security information. It also refers to technologies designed to avoid the accidental corruption of mission-critical data, as well as maintaining U.S. ability to penetrate enemy information technologies in times of war.
+
+Let’s put information security in perspective. Almost every era has its defining military systems that help maintain a huge edge over adversaries. Many of the crucial battles of history involve the first or most decisive clashes of these leading-edge military systems.
+
+Two of the defining weapon systems of World War I, for example, were the armored battleship and the machine gun. The battles of Jutland and the Somme chillingly demonstrated the capabilities of these weapon systems and the advantages they brought to those who used them. Later, World War II saw the aircraft carrier and the atomic bomb. The Battle of Midway, and the attack on Hiroshima, Japan, showed the significance of these weapon systems.
+
+Such crucial enabling military technologies and platforms can be traced back through history, and include the rifled musket of the American Civil War era, all the way back to the stirrup of ancient times that enabled humans for the first time to fight from horseback and wreak havoc on the soldiers who still fought only on foot. Today, the precision-guided munition and the unmanned vehicle perhaps are the defining military technologies of this era.
+
+Now let’s take a look forward. I believe the computer and the data network will be the aircraft carrier and atomic bomb of the future. If a nation can exploit its enemies’ computers and data networks, then it clearly has the upper hand. Conversely, a nation that cannot safeguard its own computers and data networks has little chance of prevailing.
+
+The criticality of U.S. information security was driven home early last month with reports of Chinese military technicians hacking into a Pentagon computer network. These computer incursions, which allegedly happened last June, were called some of the most successful cyber attacks ever on the U.S. Department of Defense.
+
+Pentagon leaders admitted that they had to shut down part of the computer system serving the office of Defense Secretary Robert Gates to contain the damage. Reports place blame for the attack on the Chinese People’s Liberation Army.

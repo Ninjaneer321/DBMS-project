@@ -1,0 +1,64 @@
+loop:DECLARE
+<declarations section>
+BEGIN
+<executable command(s)>
+EXCEPTION
+<exception handling>
+END;
+
+declare
+i number;
+begin
+i:=1;
+loop
+dbms_output.put_line(i);
+i:=i+1;
+exit when i>5;
+end loop;
+end;
+
+Procedural SQL:create or replace procedure topperStudent
+as
+topperName student.name%type;
+begin
+select name into topperName from student where marks=(select max(marks) from student)
+dbms_output.put_line(topperName);
+end;
+
+begin
+getTopperStudent;
+end;
+
+Cursors:
+%FOUND, %NOTFOUND, %ROWCOUNT
+
+create or replace procedure updateFees(newFee int)
+as 
+var_rows number;
+begin
+update student set fees=newFee;
+if SQL%FOUND then
+   var_rows=SQL%ROWCOUNT;
+   dbms_output.put_line(//use || for + instead)
+else
+    dbms_output.put_line("see lets");
+end if;
+end;
+
+Explicit cursors:
+declare cursor c1
+is
+select deptName as Department,avg(fees) as Average_Fees from student natural join department group by deptName;
+rec1 c1%rowtype;
+begin
+for rec1 in c1 loop
+dbms_output.put_line(rec1.Department ||' '||rec1.Average_Fees);
+end loop;
+end;
+
+
+
+
+
+ 
+ 

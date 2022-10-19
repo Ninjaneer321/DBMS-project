@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS training_info (
+    `training_id` INT,
+    `batch_size` INT,
+    `id` INT,
+    `name` VARCHAR(20) CHARACTER SET utf8
+);
+INSERT INTO training_info VALUES
+    (766799,37,786543,'Janna I. Good'),
+    (766699,47,786544,'Wyatt F. Savage'),
+    (766840,35,786545,'Fleur G. Campbell'),
+    (766909,45,786546,'Glenna P. Stout'),
+    (766693,35,786547,'Michael L. Gallagher'),
+    (766706,37,786548,'Knox Z. Long'),
+    (766664,47,786549,'Judah T. Romero'),
+    (766968,45,786550,'Branden G. Mcdaniel'),
+    (766856,42,786551,'Sasha X. Zamora'),
+    (766629,47,786552,'Tamara I. Schmidt'),
+    (766820,41,786553,'Bethany R. Ochoa'),
+    (766742,45,786554,'Beau U. Nixon'),
+    (766595,47,786555,'Tyrone I. Vazquez'),
+    (766875,41,786556,'Amal X. Franks'),
+    (766899,35,786557,'Sean K. Pace'),
+    (766801,43,786558,'Jescie K. Workman'),
+    (766587,40,786559,'Stuart N. Mccarty'),
+    (766700,39,786560,'Hedwig P. Summers'),
+    (766796,43,786561,'Anjolie V. Avila'),
+    (766924,48,786562,'Joelle D. Wright'),
+    (766713,50,786563,'Ignacia R. Cleveland'),
+    (766601,39,786564,'Genevieve Q. Knapp'),
+    (766761,46,786565,'Dolan Y. Whitfield'),
+    (766970,39,786566,'Lucian E. Maldonado');

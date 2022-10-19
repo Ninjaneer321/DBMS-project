@@ -1,0 +1,76 @@
+CREATE TABLE pow(
+   pow_id  INTEGER  NOT NULL PRIMARY KEY 
+  ,name    VARCHAR(20) NOT NULL
+  ,place   VARCHAR(23) NOT NULL
+  ,id      INTEGER  NOT NULL
+  ,posting VARCHAR(19) NOT NULL
+);
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1000,'Phelan Swanson','Cermik',135,'Vanves');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1137,'Edward Head','Sodertalje',947,'Austin');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1274,'Clinton Harrison','Lizge',111,'Vladivostok');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1411,'Xander Mullins','Montignoso',959,'Oklahoma City');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1548,'Wesley Prince','Secunderabad',922,'Sitovo');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1685,'Leo Graham','Olympia',818,'Zhongfan');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1822,'Igor Weeks','Tresigallo',888,'Boundiali');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1959,'Clarke Mullins','Laken',658,'Shataping');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2096,'Melvin Gay','Baltimore',204,'Bungbulang');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2233,'Edward Brown','Genzano di Lucania',837,'Kemiri');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2370,'Calvin Campbell','Kester',125,'Pamanukan');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2507,'Kenyon Riggs','Traiskirchen',732,'Daleman');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2644,'Samuel Andrews','Jauchelette',927,'Mama');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2781,'Jarrod Ray','Saint-Marc',999,'Ad Dann');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (2918,'Forrest Hill','Stamford',964,'Huangtudian');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3055,'Callum Caldwell','Lacombe County',230,'Quinta de Valadares');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3192,'Abdul Mccray','Desteldonk',324,'Zyuzino');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3329,'Carlos Mack','Pretoro',129,'Las Sabanas');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3466,'Vaughan Petty','Cincinnati',472,'Guayabal');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3603,'Allistair Byrd','Ham-sur-Sambre',771,'Tucano');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3740,'Yardley Calderon','Perpignan',872,'Sukodono');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (3877,'Rahim Shaffer','Tiruvarur',989,'Tehri');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4014,'George Schwartz','Launceston',863,'Ladakh');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4151,'Nash Stanley','Colorno',144,'Leh');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4288,'Steel Dominguez','Schagen',119,'Jammu');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4425,'Phillip Figueroa','Bernau',896,'Srinagar');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4562,'Francis Wheeler','Cauquenes',736,'Shimla');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4699,'Abel Morton','Stratford',161,'Guwahati');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4836,'Leonard Atkins','Gelsenkirchen',610,'Ranchi');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (4973,'Sylvester Mullen','Santa Maria',292,'Jabalpur');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5110,'Melvin Mccormick','Kurnool',634,'Udaipur');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5247,'Caesar Frye','Meer',737,'Jodhpur');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5384,'Damon Guzman','100 Mile House',269,'Jaisalmer');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5521,'Aladdin Mclaughlin','Pichilemu',944,'Longewara');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5658,'Eaton Goff','Dalbeattie',907,'Bhuj');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5795,'Raja Rivas','Avadi',169,'Jambusar');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (5932,'Cadman Stanton','Wenduine',322,'Kozhikode');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6069,'Lamar Ramos','Göksun',906,'Nagaur');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6206,'Keith Harvey','Kraków',484,'Bhilai');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6343,'Clinton Cotton','San José de Maipo',858,'Agartala');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6480,'Kevin Ortiz','Didim',340,'Itanagar');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6617,'Jonas Duran','Ludvika',821,'Imphal');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6754,'Sean Alvarez','Begles',716,'Kohima');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (6891,'Benedict Conner','Aserrí',337,'Cuttack');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7028,'Roth Hoffman','Hastings',593,'Nagercoil');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7165,'Samson Stevenson','Siculiana',879,'Igcocolo');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7302,'Hayden Lawrence','Calgary',411,'Xihuachi');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7439,'Abel Watson','Jodhpur',134,'Boawae');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7576,'Blake Gentry','Mumbai',179,'Kyrylivka');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7713,'Rashad Valentine','Horsham',441,'Villa Serrano');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7850,'Mohammad Kaufman','Blairgowrie',374,'Manacsac');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (7987,'Colby Charles','Hasselt',662,'San Sebastian');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8124,'Levi Olson','Saint John',351,'Skole');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8261,'Lamar Holder','Cuceglio',664,'Cinyumput');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8398,'Vincent Henderson','Elsene',978,'Suchy');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8535,'Travis Nguyen','Noicattaro',841,'Bulihan');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8672,'Kevin Watts','Morwell',293,'Tangul Wetan');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8809,'Tanek Horne','Howrah',889,'Dingshan');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (8946,'Seth Rich','Cabrero',199,'Stamford');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9083,'Hiram Kidd','Harelbeke',283,'El Mirador');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9220,'Ira Dodson','San Gregorio nelle Alpi',327,'Otoka');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9357,'Baker Hahn','North Battleford',839,'Farrokh Shahr');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9494,'Hayes Ball','Lakeshore',121,'Al Mijlad');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9631,'Allistair Cooper','Cuccaro Vetere',700,'Snegiri');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9768,'Orson Hooper','Ramsey',591,'Huertas');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (9905,'Kyle Frye','Vilna',893,'Linjiang');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1042,'Christopher Mcmillan','Wick',372,'Half Way Tree');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1179,'August Hanson','Dollard-des-Ormeaux',865,'Dasanlian Lauk');
+INSERT INTO pow(pow_id,name,place,id,posting) VALUES (1316,'August Mckay','Fraserburgh',498,'Kanchanaburi');

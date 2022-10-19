@@ -1,0 +1,32 @@
+CREATE TABLE IF NOT EXISTS radio_engineer (
+    `mobile_no` VARCHAR(14) CHARACTER SET utf8,
+    `post` VARCHAR(19) CHARACTER SET utf8,
+    `salary` INT,
+    `id` INT,
+    `name` VARCHAR(19) CHARACTER SET utf8
+);
+INSERT INTO radio_engineer VALUES
+    ('1-733-345-9689','Cuddapah',50000,786568,'Porter H. Henry'),
+    ('1-928-542-5066','Suwa?ki',51000,786569,'Jasmine W. Wooten'),
+    ('1-249-121-8556','Gistel',52000,786570,'Ross B. Hubbard'),
+    ('1-476-648-7693','Bostaniçi',53000,786571,'Blaze O. Schwartz'),
+    ('1-670-533-1919','Noisy-le-Grand',54000,786572,'Wynter E. Mccarthy'),
+    ('1-147-119-0733','Orroli',55000,786573,'Valentine X. Floyd'),
+    ('1-123-345-0812','Beausejour',56000,786574,'Gareth M. Cantu'),
+    ('1-659-558-4062','Pelotas',57000,786575,'Helen H. Lott'),
+    ('1-768-300-6219','Serralunga d''Alba',58000,786576,'Dylan C. Hubbard'),
+    ('1-808-290-6538','Labrecque',59000,786577,'Hashim A. Joseph'),
+    ('1-674-456-6702','Milazzo',60000,786578,'Matthew B. Salinas'),
+    ('1-231-566-4393','Ludlow',61000,786579,'Ciaran K. Beck'),
+    ('1-745-692-5687','Polatl?',62000,786580,'Patrick O. William'),
+    ('1-734-349-1251','Grouville',63000,786581,'Xander J. Humphrey'),
+    ('1-403-529-8799','Lens',64000,786582,'Duncan F. Bond'),
+    ('1-573-341-6300','Terlago',65000,786583,'Germane Y. Jacobson'),
+    ('1-591-847-3783','Cametá',66000,786584,'Xyla D. Tran'),
+    ('1-465-542-5886','Cefalà Diana',67000,786585,'Nichole I. Macias'),
+    ('1-212-364-9195','Satriano di Lucania',68000,786586,'Florence D. Lamb'),
+    ('1-600-522-7815','Kamarhati',69000,786587,'Bethany N. Rogers'),
+    ('1-329-843-6505','Villers-la-Ville',70000,786588,'Cleo U. Fields'),
+    ('1-831-257-5733','Stony Plain',71000,786589,'Aquila E. Jenkins'),
+    ('1-387-666-0717','Colina',72000,786590,'Zahir H. Boyd'),
+    ('1-488-153-5226','Te Puke',73000,786591,'Reese D. Arnold');

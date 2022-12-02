@@ -1,2 +1,7 @@
 # DBMS-project
-Army database for effiient tracking of military and non-military operations 
+## Project Task 
+Army database management for systematic tracking of military and non-military operations 
+
+## Model(s)
+1. Relational Model - 
+2. Entity Relationship (ER) Model - 

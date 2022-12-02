@@ -4,4 +4,4 @@ Army database management for systematic tracking of military and non-military op
 
 ## Model(s)
 1. Relational Model - [Link](https://github.com/sinhasagar507/DBMS-project/blob/main/Docs/Relational%20Model.pdf)
-2. Entity Relationship (ER) Model - Link[]
+2. Entity Relationship (ER) Model - [Link](https://github.com/sinhasagar507/DBMS-project/blob/main/Docs/ER%20Diagram.png)
